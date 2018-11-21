@@ -1,17 +1,38 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar color="security">
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <ion-list>
+    <ion-card>
+        <img src="../../assets/imgs/ramos.jpg">
+    </ion-card>
+    <ion-item>
+      <ion-label>Nombre:</ion-label>
+      <ion-label type="nom">Luis Enrique</ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Apellido:</ion-label>
+      <ion-label type="apell">Ramos Manrique</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fecha de Nacimiento:</ion-label>
+      <ion-label type="nacimiento">13/04/1996</ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Dni:</ion-label>
+      <ion-label type="dni">71768796</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Estado:</ion-label>
+      <ion-label type="estado">No activo</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
