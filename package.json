@@ -43,6 +43,9 @@
     "zone.js": "0.8.26",
     "cordova-android": "~7.1.2",
     "cordova-browser": "~5.0.4"
+<<<<<<< HEAD
+>>>>>>> 1529324d600a562cc9c51c0e6290f12c9efb00d0
+=======
 >>>>>>> 1529324d600a562cc9c51c0e6290f12c9efb00d0
   },
   "devDependencies": {
