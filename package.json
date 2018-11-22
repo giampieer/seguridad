@@ -37,7 +37,13 @@
     "ionicons": "3.0.0",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
+<<<<<<< HEAD
     "zone.js": "0.8.26"
+=======
+    "zone.js": "0.8.26",
+    "cordova-android": "~7.1.2",
+    "cordova-browser": "~5.0.4"
+>>>>>>> 1529324d600a562cc9c51c0e6290f12c9efb00d0
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
@@ -61,7 +67,8 @@
       "cordova-plugin-ionic-keyboard": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "browser"
     ]
   }
 }
