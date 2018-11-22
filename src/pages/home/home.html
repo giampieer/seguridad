@@ -4,35 +4,55 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content style="background-color: #00796B">
 
-  <ion-list>
+  <h2 style="text-align: center">Información de usuario</h2>
+  <ion-row>
+    <ion-col col-6>
+        <ion-card>
+            <ion-card-content>
+              <ion-row>
+                <ion-col style="text-align: center">
+                  <img src="../../assets/imgs/ramos.jpg" style="height: 150px;width: 100px;" />
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+    </ion-col>
+    <ion-col col-6>
+      <ion-card style="border: 5px">
+        <ion-card-content>
+          <ion-card-title>
+            Nombre
+          </ion-card-title>
+          <p>Luis Enrique</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+          <ion-card-content>
+            <ion-card-title>
+              Apellido
+            </ion-card-title>
+            <p>Ramos Manrique</p>
+          </ion-card-content>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+    
     <ion-card>
-        <img src="../../assets/imgs/ramos.jpg">
+      <ion-card-content>
+        <ion-card-title>
+            Fecha de Nacimiento
+        </ion-card-title>
+        <p>13/04/1996</p>
+        <ion-card-title>
+            Dni
+        </ion-card-title>
+        <p>71768796</p>
+        <ion-card-title>
+            Estado
+        </ion-card-title>
+        <p>No activo</p>
+      </ion-card-content>
     </ion-card>
-    <ion-item>
-      <ion-label>Nombre:</ion-label>
-      <ion-label type="nom">Luis Enrique</ion-label>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label>Apellido:</ion-label>
-      <ion-label type="apell">Ramos Manrique</ion-label>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Fecha de Nacimiento:</ion-label>
-      <ion-label type="nacimiento">13/04/1996</ion-label>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label>Dni:</ion-label>
-      <ion-label type="dni">71768796</ion-label>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Estado:</ion-label>
-      <ion-label type="estado">No activo</ion-label>
-    </ion-item>
-  </ion-list>
 </ion-content>
