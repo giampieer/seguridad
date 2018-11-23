@@ -7,6 +7,9 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { DatosPersonaPage } from '../pages/datos-persona/datos-persona';
+import { NumerosEmergenciaPage } from '../pages/numeros-emergencia/numeros-emergencia';
+import { LoginPage } from '../pages/login/login'
 import { GoogleMaps } from '@ionic-native/google-maps';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,7 +21,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DatosPersonaPage,
+    NumerosEmergenciaPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +36,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    DatosPersonaPage,
+    NumerosEmergenciaPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
