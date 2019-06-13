@@ -43,6 +43,7 @@ export class AboutPage {
       .then(() => {
         // Now you can use all methods safely.
         this.getPosition();
+        this.showMarkers();
       })
       .catch(error =>{
         console.log(error);
@@ -66,6 +67,41 @@ export class AboutPage {
         console.log(error);
         console.log('No te va a salir prro');
       });
+  }
+
+  showMarkers() {
+    this.map.addMarker({
+      title: 'marcador1',
+      icon: 'blue',
+      position : {
+        lat: -12.1954,
+        lng: -76.9719
+      }
+    });
+    this.map.addMarker({
+      title: 'marcador2',
+      icon: 'blue',
+      position : {
+        lat: -12.205902,
+        lng: -76.940718
+      }
+    });
+    this.map.addMarker({
+      title: 'marcador3',
+      icon: 'blue',
+      position : {
+        lat: -12.759101,
+        lng: -76.600590
+      }
+    });
+    this.map.addMarker({
+      title: 'marcador4',
+      icon: 'blue',
+      position : {
+        lat: -12.665943,
+        lng: -76.630459
+      }
+    });
   }
 
 }

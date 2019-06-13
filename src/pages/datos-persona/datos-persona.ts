@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NumerosEmergenciaPage } from '../numeros-emergencia/numeros-emergencia';
 
 /**
  * Generated class for the DatosPersonaPage page.
@@ -8,7 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-datos-persona',
   templateUrl: 'datos-persona.html',
@@ -22,4 +23,7 @@ export class DatosPersonaPage {
     console.log('ionViewDidLoad DatosPersonaPage');
   }
 
+  goNumerosEmergencia(){
+    this.navCtrl.push(NumerosEmergenciaPage);
+  }
 }

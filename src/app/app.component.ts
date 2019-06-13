@@ -3,6 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { BackgroundMode } from '@ionic-native/background-mode';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login'
 
@@ -10,13 +11,15 @@ import { LoginPage } from '../pages/login/login'
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  rootPage:any = TabsPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(private backgroundMode: BackgroundMode,public platform: Platform,public statusBar: StatusBar, splashScreen: SplashScreen) {
+    backgroundMode.enable();
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      statusBar.styleDefault();
+      if(this.platform.is('android')) {
+        //cambiar el color de statusbar al color primario de la app
+        statusBar.backgroundColorByHexString('#0336FF');
+      }
       splashScreen.hide();
     });
   }

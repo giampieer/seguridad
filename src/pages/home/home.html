@@ -1,32 +1,31 @@
 <ion-header >
   <ion-navbar color="security">
-    <ion-title>ESTADO PERSONAL</ion-title>
+    <ion-title>ACERCA DE</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="buttons-components-page" style="background-color: #0336FF">
   <ion-card>
-    <ion-card-title style="text-align: center">
-        Alert Security
-    </ion-card-title>
-    <img src="../../assets/imgs/log.PNG">
+    <img src="assets/imgs/oefa.png">
   </ion-card>
-  <ion-card (click)="goDatosPersonas()"> 
-    <ion-card-content>
-        <img src="../../assets/imgs/ramos.jpeg" />
-      <ion-item>
+  <ion-card>
+      <img src="assets/imgs/peru.png">
+    </ion-card>
+  <ion-card> 
+      <ion-card-title style="text-align: center">
+          Team
+      </ion-card-title>
+      <ion-card-content>
+        <img src="assets/imgs/team.png" />
+        <ion-item>
         <ion-avatar item-start>
-          <img src="../../assets/imgs/ramos.jpeg">
+          <img src="assets/imgs/team.png">
         </ion-avatar>
         <ion-card-title>
-          Luis Enrique
+          AdminTec
         </ion-card-title>
-        <p>Ingeniero de sistemas</p>
       </ion-item>
     </ion-card-content>
   </ion-card>
-  <ion-fab right bottom>
-    <button ion-fab color="danger" (click)="goNumerosEmergencia()"><ion-icon name="phone-portrait"></ion-icon></button>
-  </ion-fab>
 </ion-content>
 

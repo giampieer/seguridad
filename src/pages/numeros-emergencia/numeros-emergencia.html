@@ -21,45 +21,34 @@
     <img src="../../assets/imgs/smartphone.png">
     <ion-item style="text-align: center">
       <ion-card-title>
-        Numeros de Emergencia
+        Cargar Datos
       </ion-card-title>
     </ion-item>
     <ion-item>
-      <ion-avatar item-start>
-          <img src="../../assets/imgs/telephone.png">
-      </ion-avatar>
-      <ion-card-title>
-        Serenazgo
-      </ion-card-title>
-      <p>Celular</p>
-      <h1>
-        998712345
-      </h1>
-      <button ion-button color="primary" block (click)="doConfirm()">Llamar</button>
-      <p>Telefono</p>
-      <h1>
-        015426367
-      </h1>
-      <button ion-button color="primary" block (click)="doConfirm()">Llamar</button>
+      <ion-label>Tipo de Notificación:</ion-label>
+      <ion-select placeholder="----------------">
+        <ion-option>Aceptada</ion-option>
+        <ion-option>Denegada</ion-option>
+        <ion-option>Nueva Notificación</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
-      <ion-avatar item-start>
-          <img src="../../assets/imgs/telephone.png">
+      <ion-label>Fecha entrega:</ion-label>
+      <ion-datetime displayFormat="DD MMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+        <ion-label>Fecha Nueva entrega:</ion-label>
+        <ion-datetime displayFormat="DD MMM YYYY"></ion-datetime>
+      </ion-item>
+    <ion-item>
+      <ion-avatar item-end>
+          <img src="../../assets/imgs/camera.png">
       </ion-avatar>
       <ion-card-title>
-        Comisaria
+        Capturar Foto:
       </ion-card-title>
-      <p>Celular</p>
-      <h1>
-        964532876
-      </h1>
-      <button ion-button color="primary" block (click)="doConfirm()">Llamar</button>
-      <p>Telefono</p>
-      <h1>
-        015385642
-      </h1>
-      <button ion-button color="primary" block (click)="doConfirm()">Llamar</button>
     </ion-item>
+    <button ion-button color="primary" block (click)="doConfirm()">Guardar</button>
   </ion-card>
 
 </ion-content>

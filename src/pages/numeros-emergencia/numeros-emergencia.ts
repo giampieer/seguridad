@@ -9,12 +9,13 @@ import { AlertController } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-numeros-emergencia',
   templateUrl: 'numeros-emergencia.html',
 })
 export class NumerosEmergenciaPage {
+
+  myDate: String = new Date().toISOString();
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController) {
   }
@@ -25,7 +26,7 @@ export class NumerosEmergenciaPage {
   doConfirm() {
     let confirm = this.alerCtrl.create({
       title: 'Alerta',
-      message: '¿Desea Realizar esta llamada?',
+      message: '¿Desea guardar esta información?',
       buttons: [
         {
           text: 'No',

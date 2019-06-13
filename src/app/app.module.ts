@@ -11,6 +11,7 @@ import { DatosPersonaPage } from '../pages/datos-persona/datos-persona';
 import { NumerosEmergenciaPage } from '../pages/numeros-emergencia/numeros-emergencia';
 import { LoginPage } from '../pages/login/login'
 import { GoogleMaps } from '@ionic-native/google-maps';
+import { BackgroundMode } from '@ionic-native/background-mode';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -45,7 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatusBar,
     SplashScreen,
     GoogleMaps,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    BackgroundMode
   ]
 })
 export class AppModule {}
