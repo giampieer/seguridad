@@ -27,7 +27,7 @@
     "@ionic-native/status-bar": "~4.17.0",
     "@ionic/storage": "2.2.0",
     "cordova-android": "7.0.0",
-    "cordova-browser": "~5.0.4",
+    "cordova-browser": "~6.0.0",
     "cordova-plugin-background-mode": "^0.7.2",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-googlemaps": "^2.4.6",
